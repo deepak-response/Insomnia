@@ -1,0 +1,14 @@
+_id: env_env_b489a40be2f12d178207be1fe6f5040e04e0b412_sub__c682411f
+type: Environment
+parentId: env_b489a40be2f12d178207be1fe6f5040e04e0b412
+modified: 1682441070827
+created: 1682441070827
+name: OpenAPI env experience.dev.dtp.alhilalbankuaedev.ae
+data:
+  scheme: https
+  base_path: ""
+  host: experience.dev.dtp.alhilalbankuaedev.ae
+dataPropertyOrder: null
+color: null
+isPrivate: false
+metaSortKey: 1682441070827

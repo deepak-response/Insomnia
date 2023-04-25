@@ -1,0 +1,126 @@
+_id: spc_dfa805053f454485948ec26c0c0a2172
+type: ApiSpec
+parentId: wrk_3f01a9833816492baf0c3224752b3be9
+modified: 1682441073047
+created: 1682441073040
+fileName: Stock API 1.0.0
+contents: |-
+  openapi: 3.0.0
+  info:
+    title: Stock API 
+    description: Stock Information Service
+    version: "1.0.0"
+    contact:
+      name: Lokesh Jain
+      email: ljain@alhilalbank.ae
+      url: https://example.com
+  tags:
+    - name: Production
+    - name: Beta
+  servers:
+    - url: https://experience.dev.dtp.alhilalbankuaedev.ae
+      description: Local development server
+  paths:
+    /stock/historical:
+      get:
+        description: "Description"
+        operationId: getHistoricalStock
+        tags:
+          - Production
+        parameters:
+          - name: tickers
+            in: query
+            description: Tickers of stocks
+            required: true
+            schema:
+              type: string
+        responses:
+          '200':
+            description: Status 200
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    meta_data:
+                      type: object
+                      properties:
+                        api_name:
+                          type: string
+                        num_total_data_points:
+                          type: integer
+                        credit_cost:
+                          type: integer
+                        start_date:
+                          type: string
+                        end_date:
+                          type: string
+                    result_data:
+                      type: object
+                      additionalProperties:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            date:
+                              type: string
+                            volume:
+                              type: integer
+                            high:
+                              type: number
+                            low:
+                              type: number
+                            adj_close:
+                              type: number
+                            close:
+                              type: number
+                            open:
+                              type: number
+    /stock/closing:
+      get:
+        description: "Description"
+        operationId: getClosingStock
+        tags:
+          - "Production"
+        parameters:
+          - name: tickers
+            in: query
+            description: Tickers of stocks
+            required: true
+            schema:
+              type: string
+        responses:
+          '200':
+            description: Status 200
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    meta_data:
+                      type: object
+                      properties:
+                        api_name:
+                          type: string
+                    result_data:
+                      type: object
+                      additionalProperties:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            date:
+                              type: string
+                            volume:
+                              type: integer
+                            high:
+                              type: number
+                            low:
+                              type: number
+                            adj_close:
+                              type: number
+                            close:
+                              type: number
+                            open:
+                              type: number
+contentType: yaml
