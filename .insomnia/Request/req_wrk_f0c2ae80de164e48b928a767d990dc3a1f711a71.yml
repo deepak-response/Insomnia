@@ -1,0 +1,24 @@
+_id: req_wrk_f0c2ae80de164e48b928a767d990dc3a1f711a71
+type: Request
+parentId: fld_wrk_f0c2ae80de164e48b928a767d990dc3adf70fc79
+modified: 1682442028562
+created: 1682442028562
+url: "{{ base_url }}/stock/closing"
+name: /stock/closing
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: tickers
+    disabled: false
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1682442028562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_wrk_f0c2ae80de164e48b928a767d990dc3a4c965b39
+type: Request
+parentId: fld_wrk_f0c2ae80de164e48b928a767d990dc3adf70fc79
+modified: 1682442028575
+created: 1682442028575
+url: "{{ base_url }}/stock/historical"
+name: /stock/historical
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: tickers
+    disabled: false
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1682442028575
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
